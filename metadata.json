@@ -1,0 +1,8 @@
+{
+  "name": "Bespoke Digital Experience",
+  "description": "Lloc web oficial de Montserratina, cafeteria i restaurant informal a Manresa (Catalunya). Esmorzars, cafè, tapes i cuina informal al Carrer Muralla del Carme, 11.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

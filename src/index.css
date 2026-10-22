@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-sand: #faf7f2;
+    --bg-cream: #f4eee5;
+    --bg-card: #ffffff;
+    --border-warm: rgba(84, 52, 33, 0.12);
+    --text-primary: #231610;
+    --text-secondary: #5c4a3e;
+    --text-muted: #847265;
+    --terracotta: #b8542b;
+    --terracotta-dark: #933e1c;
+    --terracotta-light: #df7b53;
+    --espresso: #1f140e;
+    --olive: #4c583f;
+    --olive-light: #6a7c57;
+    --warm-gold: #c59341;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    color-scheme: light;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--bg-sand);
+    color: var(--text-primary);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, .font-serif-cafe {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    letter-spacing: -0.015em;
+  }
+}
+
+/* Warm subtle patterns & transitions */
+.bg-warm-pattern {
+  background-color: #faf7f2;
+  background-image: radial-gradient(#d6c6b3 0.75px, transparent 0.75px);
+  background-size: 24px 24px;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Accessible focus outline */
+:focus-visible {
+  outline: 2px solid #b8542b;
+  outline-offset: 3px;
+}
