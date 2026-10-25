@@ -3,11 +3,13 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import AboutSection from "./components/AboutSection";
 import OfferingsSection from "./components/OfferingsSection";
+import InstagramGallerySection from "./components/InstagramGallerySection";
+import ScheduleSection from "./components/ScheduleSection";
 import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
 import OwnerConfigModal from "./components/OwnerConfigModal";
@@ -15,7 +17,6 @@ import {
   Language,
   OwnerEditableConfig,
   INITIAL_OWNER_CONFIG,
-  VERIFIED_BUSINESS_DATA,
 } from "./data/restaurantData";
 
 export default function App() {
@@ -57,7 +58,6 @@ export default function App() {
       <Navbar
         lang={lang}
         onLanguageChange={handleLanguageChange}
-        onOpenOwnerPanel={() => setOwnerModalOpen(true)}
       />
 
       {/* Main Content */}
@@ -67,16 +67,19 @@ export default function App() {
         <OfferingsSection
           lang={lang}
           ownerConfig={ownerConfig}
-          onOpenOwnerPanel={() => setOwnerModalOpen(true)}
         />
-        <ContactSection lang={lang} ownerConfig={ownerConfig} />
+        <InstagramGallerySection lang={lang} />
+        <ScheduleSection lang={lang} />
+        <ContactSection
+          lang={lang}
+          ownerConfig={ownerConfig}
+        />
       </main>
 
       {/* Footer */}
       <Footer
         lang={lang}
         onLanguageChange={handleLanguageChange}
-        onOpenOwnerPanel={() => setOwnerModalOpen(true)}
       />
 
       {/* Owner Configuration Modal */}

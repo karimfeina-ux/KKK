@@ -104,7 +104,7 @@ export default function OwnerConfigModal({
         <div className="flex items-center justify-between px-6 py-4 border-b border-[#231610]/10 bg-[#faf7f2]">
           <div>
             <h2 className="text-xl font-serif-cafe font-bold text-[#1f140e]">
-              {t.ownerAdminTitle}
+              {t.ownerPanelTitle}
             </h2>
             <p className="text-xs text-[#6c594d]">
               Montserratina • Carrer Muralla del Carme, 11, Manresa
